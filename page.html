@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Nexus Consulting</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    header, footer {
+      background-color: #f4f4f4;
+      padding: 20px 10%;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+      height: 500px;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    /* Main Sections */
+    .container {
+      padding: 40px 10%;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service {
+      flex: 1 1 300px;
+      background-color: #fafafa;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav li {
+        margin: 10px 0;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="logo">
+      <h1>Digital Nexus Consulting</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Digital Transformation Partner</h1>
+      <p>Empowering your business with cutting-edge web solutions and digital strategies</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container section">
+    <h2>About Us</h2>
+    <p>
+      At Digital Nexus Consulting, we specialize in web development and digital transformation. With years of experience, we help businesses enhance their digital presence, streamline operations, and drive growth through innovative technology solutions.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>
+          Custom website and web application development tailored to your business needs, ensuring an engaging and responsive user experience.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Digital Transformation</h3>
+        <p>
+          We guide organizations through digital transformation journeys, integrating modern technologies to optimize operations and boost competitiveness.
+        </p>
+      </div>
+      <div class="service">
+        <h3>UX/UI Design</h3>
+        <p>
+          Crafting intuitive and visually appealing user interfaces that drive engagement and satisfaction.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Consulting & Strategy</h3>
+        <p>
+          Providing expert guidance on technology strategy, digital innovation, and process optimization to fuel your business growth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container section">
+    <h2>Contact Us</h2>
+    <p>
+      Interested in transforming your digital presence? Get in touch with us!
+    </p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:info@digitalnexus.pt">info@digitalnexus.pt</a><br>
+      <strong>Phone:</strong> +351 123 456 789
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Digital Nexus Consulting. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
